@@ -1,0 +1,37 @@
+name: Atualizar catalogo de mapas de trackeamento
+
+on:
+  schedule:
+    # a cada 20 minutos - ajuste o intervalo conforme a frequencia real de novos arquivos
+    - cron: '*/20 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rodar figma-sync.js
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FOLDER_PRODUCAO: ${{ secrets.FIGMA_FOLDER_PRODUCAO }}
+          FIGMA_FOLDER_WIP: ${{ secrets.FIGMA_FOLDER_WIP }}
+        run: node figma-sync.js
+
+      - name: Commit do catalog.json (se houver mudanca)
+        run: |
+          git config user.name "figma-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add catalog.json
+          git diff --staged --quiet || git commit -m "Atualiza catalogo de mapas de trackeamento"
+          git push
