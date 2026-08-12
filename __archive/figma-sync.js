@@ -7,13 +7,9 @@
 // Gera/atualiza o arquivo catalog.json, consumido pelo site estatico (app.js).
 //
 // Variaveis de ambiente necessarias:
-//   FIGMA_TOKEN               -> Personal Access Token do Figma (scopes: folders:read e projects:read)
-//   FIGMA_FOLDER_PRODUCAO     -> ID da pasta com os arquivos em producao (numero depois de /project/ na URL)
+//   FIGMA_TOKEN               -> Personal Access Token do Figma (scope: folders:read)
+//   FIGMA_FOLDER_PRODUCAO     -> ID da pasta com os arquivos em producao
 //   FIGMA_FOLDER_WIP          -> ID da pasta com os arquivos em work in progress
-//
-// O script tenta primeiro a rota nova (/v2/folders/:id/files). Se a conta/plano do Figma
-// ainda usa o modelo classico de "Projects" (sem pastas aninhadas), essa rota devolve 404
-// e o script cai automaticamente para a rota classica (/v1/projects/:id/files).
 //
 // Variavel opcional:
 //   DEBUG=1                   -> imprime a resposta bruta da API antes de mapear os campos
@@ -56,9 +52,7 @@ function figmaGet(pathname, callback) {
       var body = Buffer.concat(chunks).toString('utf8');
 
       if (response.statusCode < 200 || response.statusCode >= 300) {
-        var httpError = new Error('Figma API respondeu ' + response.statusCode + ' para ' + pathname + ': ' + body);
-        httpError.statusCode = response.statusCode;
-        callback(httpError, null);
+        callback(new Error('Figma API respondeu ' + response.statusCode + ' para ' + pathname + ': ' + body), null);
         return;
       }
 
@@ -93,47 +87,23 @@ function mapFile(rawFile) {
   };
 }
 
-// Converte a resposta bruta da API (v2 ou v1) na lista final de arquivos.
-function processarResposta(folderId, data, callback) {
-  if (DEBUG) {
-    console.log('--- resposta bruta da pasta ' + folderId + ' ---');
-    console.log(JSON.stringify(data, null, 2));
-  }
-
-  var arquivosBrutos = data.files || data.items || [];
-  var arquivos        = arquivosBrutos.map(mapFile);
-
-  callback(null, arquivos);
-}
-
-// Lista os arquivos de uma pasta do Figma. Tenta a rota nova (v2/folders); se a conta usa o
-// modelo classico de Projects (sem pastas aninhadas), a v2 devolve 404 e o script cai para
-// a rota classica v1/projects, que usa o mesmo ID (o numero que aparece depois de /project/
-// na URL da pasta).
+// Lista os arquivos de uma pasta (folder) do Figma.
 function listarArquivosDaPasta(folderId, callback) {
-  figmaGet('/v2/folders/' + folderId + '/files', function (erroV2, dataV2) {
-    if (!erroV2) {
-      processarResposta(folderId, dataV2, callback);
-      return;
-    }
-
-    if (erroV2.statusCode !== 404) {
-      callback(erroV2, null);
+  figmaGet('/v2/folders/' + folderId + '/files', function (error, data) {
+    if (error) {
+      callback(error, null);
       return;
     }
 
     if (DEBUG) {
-      console.log('/v2/folders/' + folderId + '/files deu 404, tentando /v1/projects/' + folderId + '/files ...');
+      console.log('--- resposta bruta da pasta ' + folderId + ' ---');
+      console.log(JSON.stringify(data, null, 2));
     }
 
-    figmaGet('/v1/projects/' + folderId + '/files', function (erroV1, dataV1) {
-      if (erroV1) {
-        callback(erroV1, null);
-        return;
-      }
+    var arquivosBrutos = data.files || data.items || [];
+    var arquivos        = arquivosBrutos.map(mapFile);
 
-      processarResposta(folderId, dataV1, callback);
-    });
+    callback(null, arquivos);
   });
 }
 
