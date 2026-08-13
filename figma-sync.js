@@ -147,7 +147,8 @@ function listarArquivosDaPasta(folderId, callback) {
 // script: se der erro, so imprime o motivo e segue em frente pro fluxo normal.
 function diagnosticoPastasDoTime(callback) {
   if (!FIGMA_TEAM_ID) {
-    callback();
+    console.error('SEM FIGMA_TEAM_ID');
+    //callback();
     return;
   }
 
