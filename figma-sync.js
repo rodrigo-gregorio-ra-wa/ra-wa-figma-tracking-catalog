@@ -149,14 +149,17 @@ function diagnosticoPastasDoTime(callback) {
   if (!FIGMA_TEAM_ID) {
     console.error('SEM FIGMA_TEAM_ID');
     //callback();
-    return;
+    process.exit(1);
+    //return;
   }
 
   figmaGet('/v2/teams/' + FIGMA_TEAM_ID + '/folders', function (erro, data) {
     if (erro) {
-      console.log('[diagnostico] Nao foi possivel listar as pastas do Team ' + FIGMA_TEAM_ID + ': ' + erro.message);
-      callback();
-      return;
+      console.error('[diagnostico] Nao foi possivel listar as pastas do Team ' + FIGMA_TEAM_ID + ': ' + erro.message);
+      //console.log('[diagnostico] Nao foi possivel listar as pastas do Team ' + FIGMA_TEAM_ID + ': ' + erro.message);
+      //callback();
+      process.exit(1);
+      //return;
     }
 
     var pastas = data.folders || data.items || [];
