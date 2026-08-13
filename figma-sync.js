@@ -122,6 +122,11 @@ function listarArquivosDaPasta(folderId, callback) {
       return;
     }
 
+    if (erroV1.statusCode === 404) {
+      callback(erroV1, null);
+      return;
+    }
+
     if (DEBUG) {
       console.log('/v1/folders/' + folderId + '/files deu 404, tentando /v2/folders/' + folderId + '/files ...');
     }
