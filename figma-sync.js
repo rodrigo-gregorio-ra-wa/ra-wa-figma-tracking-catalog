@@ -111,33 +111,28 @@ function processarResposta(folderId, data, callback) {
 // a rota classica v1/projects, que usa o mesmo ID (o numero que aparece depois de /project/
 // na URL da pasta).
 function listarArquivosDaPasta(folderId, callback) {
-  figmaGet('/v1/folders/' + folderId + '/files', function (erroV1, dataV1) {
-    if (!erroV1) {
-      processarResposta(folderId, dataV1, callback);
+  figmaGet('/v2/folders/' + folderId + '/files', function (erroV2, dataV2) {
+    if (!erroV2) {
+      processarResposta(folderId, dataV2, callback);
       return;
     }
 
-    if (erroV1.statusCode !== 404) {
-      callback(erroV1, null);
-      return;
-    }
-
-    if (erroV1.statusCode === 404) {
-      callback(erroV1, null);
+    if (erroV2.statusCode !== 404) {
+      callback(erroV2, null);
       return;
     }
 
     if (DEBUG) {
-      console.log('/v1/folders/' + folderId + '/files deu 404, tentando /v2/folders/' + folderId + '/files ...');
+      console.log('/v2/folders/' + folderId + '/files deu 404, tentando /v1/projects/' + folderId + '/files ...');
     }
 
-    figmaGet('/v2/folders/' + folderId + '/files', function (erroV2, dataV2) {
-      if (erroV2) {
-        callback(erroV2, null);
+    figmaGet('/v1/projects/' + folderId + '/files', function (erroV1, dataV1) {
+      if (erroV1) {
+        callback(erroV1, null);
         return;
       }
 
-      processarResposta(folderId, dataV2, callback);
+      processarResposta(folderId, dataV1, callback);
     });
   });
 }
