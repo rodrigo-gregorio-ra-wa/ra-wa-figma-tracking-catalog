@@ -236,8 +236,8 @@ function listarArquivosDaPasta(folderId, callback) {
       return;
     }
 
-    if (1) {//DEBUG
-      console.log('/v2/folders/' + folderId + '/files deu 404, tentando /v1/projects/' + folderId + '/files ...');
+    if (DEBUG) {
+      console.log('[diagnostico] /v2/folders/' + folderId + '/files deu 404, tentando /v1/projects/' + folderId + '/files ...');
     }
 
     figmaGet('/v1/projects/' + folderId + '/files', function (erroV1, dataV1) {
