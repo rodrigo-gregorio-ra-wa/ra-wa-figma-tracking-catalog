@@ -1,27 +1,43 @@
 // figma-sync.js
 //
-// Consulta a API do Figma (v2) em duas pastas (folders) de um Team:
-//   - pasta "producao"        -> mapas de trackeamento ja implementados
-//   - pasta "work_in_progress" -> mapas de trackeamento em desenvolvimento
+// Gera/atualiza o catalog.json (consumido pelo site estatico em app.js) com os arquivos de
+// duas categorias: "producao" (mapas de trackeamento ja implementados) e "workInProgress"
+// (mapas em desenvolvimento).
 //
-// Gera/atualiza o arquivo catalog.json, consumido pelo site estatico (app.js).
+// Pra cada categoria, o script decide como buscar os arquivos, nessa ordem de prioridade:
 //
-// Variaveis de ambiente necessarias:
-//   FIGMA_TOKEN               -> Personal Access Token do Figma (scope: folders:read)
-//   FIGMA_FOLDER_PRODUCAO     -> ID da pasta com os arquivos em producao (numero depois de /project/ na URL)
-//   FIGMA_FOLDER_WIP          -> ID da pasta com os arquivos em work in progress
+//   1. Lista de file ids (FIGMA_FILE_IDS_PRODUCAO / FIGMA_FILE_IDS_WIP) - se estiver
+//      preenchida, busca cada arquivo direto por /v1/files/:id. E o unico caminho que
+//      comprovadamente funciona com token de conta sem permissao de admin no Team.
+//   2. Pasta/folder (FIGMA_FOLDER_PRODUCAO / FIGMA_FOLDER_WIP) - se nao houver lista de
+//      ids, tenta escanear a pasta inteira: primeiro a rota nova (/v2/folders/:id/files),
+//      com fallback pra rota classica (/v1/projects/:id/files) se a nova devolver 404.
 //
-// O script tenta primeiro a rota nova (/v2/folders/:id/files). Se a conta/plano do Figma
-// ainda usa o modelo classico de "Projects" (sem pastas aninhadas), essa rota devolve 404
-// e o script cai automaticamente para a rota classica (/v1/projects/:id/files) - que hoje
-// exige o escopo depreciado "projects:read" e pode nao funcionar em tokens novos.
+// Ou seja, ao todo sao ate 4 tentativas possiveis por categoria: file ids, v2/folders,
+// v1/projects (fallback da anterior) e, so como diagnostico solto (nao bloqueia nada),
+// a listagem de pastas do Team via FIGMA_TEAM_ID.
 //
-// Variavel opcional:
-//   FIGMA_TEAM_ID             -> ID do Team no Figma. Se definida, o script lista as pastas
-//                                de nivel superior do Team ANTES de tentar as duas pastas
-//                                configuradas, só para diagnostico (imprime id e nome de cada
-//                                pasta encontrada no log). Nao interrompe o script se falhar.
-//   DEBUG=1                   -> imprime a resposta bruta da API antes de mapear os campos
+// Variaveis de ambiente:
+//   FIGMA_TOKEN                -> obrigatoria. Personal Access Token do Figma.
+//
+//   FIGMA_FILE_IDS_PRODUCAO    -> opcional (prioridade 1). Lista de file ids da categoria
+//   FIGMA_FILE_IDS_WIP            "producao"/"work in progress". Aceita um id por linha,
+//                                  ids separados por virgula, ou um array JSON de strings
+//                                  (ex: ["abc123","def456"]). O file id e o trecho da URL
+//                                  do arquivo logo depois de /file/, /design/ ou /board/.
+//
+//   FIGMA_FOLDER_PRODUCAO      -> opcional (prioridade 2, usado so se a lista de ids acima
+//   FIGMA_FOLDER_WIP               estiver vazia). ID da pasta/folder no Figma (numero
+//                                  depois de /project/ na URL da pasta).
+//
+//   FIGMA_TEAM_ID              -> opcional. Se definida, lista as pastas de nivel superior
+//                                  do Team so para diagnostico (log), sem bloquear o script.
+//
+//   DEBUG=1                    -> opcional. Imprime a resposta bruta da API antes de mapear
+//                                  os campos.
+//
+// Pelo menos uma das duas fontes (lista de ids OU pasta) precisa estar preenchida pra cada
+// categoria (producao e work in progress) - senao o script para com erro.
 //
 // Uso: node figma-sync.js
 
@@ -29,16 +45,28 @@ var https = require('https');
 var fs    = require('fs');
 var path  = require('path');
 
-var FIGMA_TOKEN           = process.env.FIGMA_TOKEN;
-var FIGMA_FOLDER_PRODUCAO = process.env.FIGMA_FOLDER_PRODUCAO;
-var FIGMA_FOLDER_WIP      = process.env.FIGMA_FOLDER_WIP;
-var FIGMA_TEAM_ID         = process.env.FIGMA_TEAM_ID || null;
-var DEBUG                 = process.env.DEBUG === '1';
+var FIGMA_TOKEN             = process.env.FIGMA_TOKEN;
+var FIGMA_FILE_IDS_PRODUCAO = process.env.FIGMA_FILE_IDS_PRODUCAO || '';
+var FIGMA_FILE_IDS_WIP      = process.env.FIGMA_FILE_IDS_WIP || '';
+var FIGMA_FOLDER_PRODUCAO   = process.env.FIGMA_FOLDER_PRODUCAO || '';
+var FIGMA_FOLDER_WIP        = process.env.FIGMA_FOLDER_WIP || '';
+var FIGMA_TEAM_ID           = process.env.FIGMA_TEAM_ID || null;
+var DEBUG                   = process.env.DEBUG === '1';
 
 var OUTPUT_PATH = path.join(__dirname, 'catalog.json');
 
-if (!FIGMA_TOKEN || !FIGMA_FOLDER_PRODUCAO || !FIGMA_FOLDER_WIP) {
-  console.error('Faltam variaveis de ambiente: FIGMA_TOKEN, FIGMA_FOLDER_PRODUCAO, FIGMA_FOLDER_WIP.');
+if (!FIGMA_TOKEN) {
+  console.error('Falta a variavel de ambiente FIGMA_TOKEN.');
+  process.exit(1);
+}
+
+if (!FIGMA_FILE_IDS_PRODUCAO && !FIGMA_FOLDER_PRODUCAO) {
+  console.error('Categoria "producao" sem fonte configurada: defina FIGMA_FILE_IDS_PRODUCAO ou FIGMA_FOLDER_PRODUCAO.');
+  process.exit(1);
+}
+
+if (!FIGMA_FILE_IDS_WIP && !FIGMA_FOLDER_WIP) {
+  console.error('Categoria "work in progress" sem fonte configurada: defina FIGMA_FILE_IDS_WIP ou FIGMA_FOLDER_WIP.');
   process.exit(1);
 }
 
@@ -83,12 +111,42 @@ function figmaGet(pathname, callback) {
   request.end();
 }
 
+// Converte o valor bruto de uma variavel de lista de ids em um array de strings limpo.
+// Aceita 3 formatos: array JSON (ex: ["abc","def"]), um id por linha, ou ids separados
+// por virgula. Tambem aceita uma mistura de linhas e virgulas no mesmo valor.
+function parseListaDeIds(valorBruto) {
+  var texto = (valorBruto || '').trim();
+
+  if (!texto) {
+    return [];
+  }
+
+  if (texto.charAt(0) === '[') {
+    try {
+      var arrayJson = JSON.parse(texto);
+      return arrayJson
+        .map(function (item) { return String(item).trim(); })
+        .filter(function (item) { return item.length > 0; });
+    } catch (erroParse) {
+      console.log('[aviso] Nao consegui interpretar a lista de ids como array JSON, tentando linha/virgula: ' + erroParse.message);
+    }
+  }
+
+  return texto
+    .split(/[\n,]/)
+    .map(function (item) { return item.trim(); })
+    .filter(function (item) { return item.length > 0; });
+}
+
 // Extrai, de forma defensiva, os campos que interessam de um arquivo retornado pela API.
-// Nomes de campo podem variar entre versoes da API do Figma; por isso tenta varias
-// alternativas antes de desistir. Rode com DEBUG=1 para inspecionar a resposta bruta
-// e ajustar esta funcao caso a Figma mude o formato.
-function mapFile(rawFile) {
-  var fileKey = rawFile.key || rawFile.file_key || rawFile.id;
+// Nomes de campo podem variar entre versoes/rotas da API do Figma; por isso tenta varias
+// alternativas antes de desistir. Rode com DEBUG=1 para inspecionar a resposta bruta e
+// ajustar esta funcao caso a Figma mude o formato.
+//
+// idConhecido e opcional: quando o arquivo foi buscado direto por /v1/files/:id (lista de
+// ids), ja sabemos o file id de antemao (a resposta desse endpoint nao repete o id/key).
+function mapFile(rawFile, idConhecido) {
+  var fileKey = idConhecido || rawFile.key || rawFile.file_key || rawFile.id;
   var updated = rawFile.last_modified || rawFile.lastModified || rawFile.updated_at || null;
 
   return {
@@ -99,15 +157,64 @@ function mapFile(rawFile) {
   };
 }
 
+// ---------------------------------------------------------------------------------------
+// Caminho 1 (prioridade): buscar arquivos direto por file id (/v1/files/:id).
+// ---------------------------------------------------------------------------------------
+
+// Busca um unico arquivo por id. Nunca aborta a categoria inteira por causa de um id com
+// problema (arquivo apagado, sem acesso etc.) - so registra o erro e segue pros proximos.
+function buscarArquivoPorId(fileId, callback) {
+  figmaGet('/v1/files/' + fileId, function (erro, data) {
+    if (erro) {
+      console.log('[aviso] Nao consegui buscar o arquivo ' + fileId + ': ' + erro.message);
+      callback(null, null);
+      return;
+    }
+
+    if (DEBUG) {
+      console.log('--- resposta bruta do arquivo ' + fileId + ' ---');
+      console.log(JSON.stringify(data, null, 2));
+    }
+
+    callback(null, mapFile(data, fileId));
+  });
+}
+
+// Busca uma lista de file ids, um de cada vez (sequencial, pra nao estourar rate limit),
+// e devolve so os que deram certo.
+function buscarArquivosPorIds(ids, callback) {
+  var resultados = [];
+
+  function proximo(indice) {
+    if (indice >= ids.length) {
+      callback(null, resultados);
+      return;
+    }
+
+    buscarArquivoPorId(ids[indice], function (erro, arquivo) {
+      if (arquivo) {
+        resultados.push(arquivo);
+      }
+      proximo(indice + 1);
+    });
+  }
+
+  proximo(0);
+}
+
+// ---------------------------------------------------------------------------------------
+// Caminho 2 (fallback): escanear a pasta inteira (v2/folders, com fallback pra v1/projects).
+// ---------------------------------------------------------------------------------------
+
 // Converte a resposta bruta da API (v2 ou v1) na lista final de arquivos.
-function processarResposta(folderId, data, callback) {
+function processarRespostaDaPasta(folderId, data, callback) {
   if (DEBUG) {
     console.log('--- resposta bruta da pasta ' + folderId + ' ---');
     console.log(JSON.stringify(data, null, 2));
   }
 
   var arquivosBrutos = data.files || data.items || [];
-  var arquivos        = arquivosBrutos.map(mapFile);
+  var arquivos        = arquivosBrutos.map(function (rawFile) { return mapFile(rawFile, null); });
 
   callback(null, arquivos);
 }
@@ -119,7 +226,7 @@ function processarResposta(folderId, data, callback) {
 function listarArquivosDaPasta(folderId, callback) {
   figmaGet('/v2/folders/' + folderId + '/files', function (erroV2, dataV2) {
     if (!erroV2) {
-      processarResposta(folderId, dataV2, callback);
+      processarRespostaDaPasta(folderId, dataV2, callback);
       return;
     }
 
@@ -138,13 +245,30 @@ function listarArquivosDaPasta(folderId, callback) {
         return;
       }
 
-      processarResposta(folderId, dataV1, callback);
+      processarRespostaDaPasta(folderId, dataV1, callback);
     });
   });
 }
 
-// Lista as pastas de nivel superior de um Team - so para diagnostico. Nunca interrompe o
-// script: se der erro, so imprime o motivo e segue em frente pro fluxo normal.
+// ---------------------------------------------------------------------------------------
+// Escolhe o caminho certo pra cada categoria: lista de ids tem prioridade sobre pasta.
+// ---------------------------------------------------------------------------------------
+function obterArquivosDaCategoria(nomeCategoria, idsBrutos, folderId, callback) {
+  var ids = parseListaDeIds(idsBrutos);
+
+  if (ids.length > 0) {
+    console.log('[' + nomeCategoria + '] usando lista de ' + ids.length + ' file id(s).');
+    buscarArquivosPorIds(ids, callback);
+    return;
+  }
+
+  console.log('[' + nomeCategoria + '] sem lista de ids configurada, tentando escanear a pasta ' + folderId + ' ...');
+  listarArquivosDaPasta(folderId, callback);
+}
+
+// ---------------------------------------------------------------------------------------
+// Diagnostico solto (nao bloqueia nada): lista as pastas de nivel superior de um Team.
+// ---------------------------------------------------------------------------------------
 function diagnosticoPastasDoTime(callback) {
   if (!FIGMA_TEAM_ID) {
     callback();
@@ -177,15 +301,15 @@ function diagnosticoPastasDoTime(callback) {
 }
 
 diagnosticoPastasDoTime(function () {
-  listarArquivosDaPasta(FIGMA_FOLDER_PRODUCAO, function (erroProducao, arquivosProducao) {
+  obterArquivosDaCategoria('producao', FIGMA_FILE_IDS_PRODUCAO, FIGMA_FOLDER_PRODUCAO, function (erroProducao, arquivosProducao) {
     if (erroProducao) {
-      console.error('Erro ao listar pasta de producao:', erroProducao.message);
+      console.error('Erro ao obter arquivos de producao:', erroProducao.message);
       process.exit(1);
     }
 
-    listarArquivosDaPasta(FIGMA_FOLDER_WIP, function (erroWip, arquivosWip) {
+    obterArquivosDaCategoria('work in progress', FIGMA_FILE_IDS_WIP, FIGMA_FOLDER_WIP, function (erroWip, arquivosWip) {
       if (erroWip) {
-        console.error('Erro ao listar pasta de work in progress:', erroWip.message);
+        console.error('Erro ao obter arquivos de work in progress:', erroWip.message);
         process.exit(1);
       }
 
