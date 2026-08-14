@@ -147,19 +147,15 @@ function listarArquivosDaPasta(folderId, callback) {
 // script: se der erro, so imprime o motivo e segue em frente pro fluxo normal.
 function diagnosticoPastasDoTime(callback) {
   if (!FIGMA_TEAM_ID) {
-    console.error('SEM FIGMA_TEAM_ID');
-    //callback();
-    process.exit(1);
-    //return;
+    callback();
+    return;
   }
 
   figmaGet('/v2/teams/' + FIGMA_TEAM_ID + '/folders', function (erro, data) {
     if (erro) {
-      console.error('[diagnostico] Nao foi possivel listar as pastas do Team ' + FIGMA_TEAM_ID + ': ' + erro.message);
-      //console.log('[diagnostico] Nao foi possivel listar as pastas do Team ' + FIGMA_TEAM_ID + ': ' + erro.message);
-      //callback();
-      process.exit(1);
-      //return;
+      console.log('[diagnostico] Nao foi possivel listar as pastas do Team ' + FIGMA_TEAM_ID + ': ' + erro.message);
+      callback();
+      return;
     }
 
     var pastas = data.folders || data.items || [];
