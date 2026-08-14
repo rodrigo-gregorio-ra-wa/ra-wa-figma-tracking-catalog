@@ -231,6 +231,7 @@ function listarArquivosDaPasta(folderId, callback) {
     }
 
     if (erroV2.statusCode !== 404) {
+      console.log('[diagnostico] Nao foi possivel pela rota /v2/folders/ dando status code: ' + erroV2.statusCode + ' --> ' + erroV2.message);
       callback(erroV2, null);
       return;
     }
