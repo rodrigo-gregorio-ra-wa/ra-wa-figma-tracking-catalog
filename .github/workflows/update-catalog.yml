@@ -24,8 +24,8 @@ jobs:
       - name: Rodar figma-sync.js
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-          # FIGMA_FILE_IDS_PRODUCAO: ${{ vars.FIGMA_FILE_IDS_PRODUCAO }}
-          # FIGMA_FILE_IDS_WIP: ${{ vars.FIGMA_FILE_IDS_WIP }}
+          FIGMA_FILE_IDS_PRODUCAO: ${{ vars.FIGMA_FILE_IDS_PRODUCAO }}
+          FIGMA_FILE_IDS_WIP: ${{ vars.FIGMA_FILE_IDS_WIP }}
           FIGMA_FOLDER_PRODUCAO: ${{ secrets.FIGMA_FOLDER_PRODUCAO }}
           FIGMA_FOLDER_WIP: ${{ secrets.FIGMA_FOLDER_WIP }}
           FIGMA_TEAM_ID: ${{ secrets.FIGMA_TEAM_ID }}
