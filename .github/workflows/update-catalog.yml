@@ -3,7 +3,7 @@ name: Atualizar catalogo de mapas de trackeamento
 on:
   schedule:
     # a cada 20 minutos - ajuste o intervalo conforme a frequencia real de novos arquivos
-    - cron: '*/20 * * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch: {}
 
 permissions:
