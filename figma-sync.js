@@ -236,7 +236,7 @@ function listarArquivosDaPasta(folderId, callback) {
       return;
     }
 
-    if (DEBUG) {
+    if (1) {//DEBUG
       console.log('/v2/folders/' + folderId + '/files deu 404, tentando /v1/projects/' + folderId + '/files ...');
     }
 
