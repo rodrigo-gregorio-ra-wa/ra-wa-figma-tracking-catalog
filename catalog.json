@@ -1,5 +1,25 @@
 {
-  "geradoEm": null,
-  "producao": [],
-  "workInProgress": []
+  "geradoEm": "2026-08-14T14:51:02.452Z",
+  "producao": [
+    {
+      "nome": "WIP B2B - Fluxo Padrão - Cadastro no Checkout",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e6ac433-0455-40c2-8c57-8800a8f36b6d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCW6D6W7GQ%2F20260813%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260813T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e371374ca188c638d638ff7d3c8b0b7c9e9c31eabaa44b5399ca7868407481a0",
+      "atualizado": "2026-08-06T19:15:19Z",
+      "url": "https://www.figma.com/file/CbpOh1DKDPxtXqEk3roBLP"
+    },
+    {
+      "nome": "B2B - Cadastro Externo - Teste A/B - Cadastro Progressivo",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e8f7a82-3481-4cfe-916f-d4fef13929db?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCW6D6W7GQ%2F20260813%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260813T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d911a39951ba207bf7191e01da0934a21a880fc5390f3f5cc4c155291bc763e4",
+      "atualizado": "2026-08-06T13:18:50Z",
+      "url": "https://www.figma.com/file/dEkeWwYsNGUJ1F1qfyYd6r"
+    }
+  ],
+  "workInProgress": [
+    {
+      "nome": "(DONE) Experimento  Cadastro B2B - Home RA - Modal",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/68918f25-7fae-4f99-bf4a-d550c05fe6f6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCW6D6W7GQ%2F20260813%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260813T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=61435e9ae398718f97a319d40c7b719ad8b73cdcf197cb8c9df51de217e63aef",
+      "atualizado": "2026-08-11T18:31:35Z",
+      "url": "https://www.figma.com/file/03H7FZsnQailZ1WH9B8vkv"
+    }
+  ]
 }
