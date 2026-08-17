@@ -1,5 +1,12 @@
 {
-  "geradoEm": "2026-08-17T00:50:37.089Z",
-  "producao": [],
+  "geradoEm": "2026-08-17T06:38:49.192Z",
+  "producao": [
+    {
+      "nome": "WIP B2B - Fluxo Padrão - Cadastro no Checkout",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e6ac433-0455-40c2-8c57-8800a8f36b6d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCW6D6W7GQ%2F20260816%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260816T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=26db9d70d1995900b2006e4439c5dcad2125d37e7fb4764647f28a1da93e7c84",
+      "atualizado": "2026-08-06T19:15:19Z",
+      "url": "https://www.figma.com/file/CbpOh1DKDPxtXqEk3roBLP"
+    }
+  ],
   "workInProgress": []
 }
