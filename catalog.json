@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-21T12:31:49.461Z",
+  "geradoEm": "2026-08-21T18:26:09.857Z",
   "producao": [
     {
       "nome": "B2B - Cadastro Externo - Teste A/B - Cadastro Progressivo",
@@ -191,8 +191,8 @@
   "workInProgress": [
     {
       "nome": "(DONE) Experimento  Cadastro B2B - Home RA - Modal",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/68918f25-7fae-4f99-bf4a-d550c05fe6f6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC2FGOZM5C%2F20260820%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260820T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8a1bc8f188ddfcd5872ca5c55cdf4cbfb1e559507993d7b6f8865daa68adb8ee",
-      "atualizado": "2026-08-11T18:31:35Z",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/963832bd-05bb-4a29-ba6c-479b6b899118?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC2FGOZM5C%2F20260820%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260820T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f2d9d4dbaadc08b3574802d5073406eb166453f21fb4660de825c6338f8dac75",
+      "atualizado": "2026-08-21T16:42:26Z",
       "url": "https://www.figma.com/file/03H7FZsnQailZ1WH9B8vkv"
     },
     {
