@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-24T18:28:56.617Z",
+  "geradoEm": "2026-08-25T00:51:40.161Z",
   "producao": [
     {
       "nome": "B2B - Cadastro Externo - Teste A/B - Cadastro Progressivo",
@@ -9,8 +9,8 @@
     },
     {
       "nome": "B2B - Fluxo Padrão - Cadastro Externo",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5ab4350d-5a48-4be3-ad0b-b494b0bdf719?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260823T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28e3df9312cb2fb5896d395809fef3dbf759135a2eefd1f8943356926b771196",
-      "atualizado": "2026-08-06T20:08:58Z",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/98f3de61-09b9-4380-bf3b-38e83d2a845b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260823T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1ddc61094127097e587fdeb677d8a285543d9e0273958fbd3a1d31336d49ccc8",
+      "atualizado": "2026-08-24T18:51:52Z",
       "url": "https://www.figma.com/file/vH82wIl3fJ4hxZThXfaPHn"
     },
     {
@@ -191,8 +191,8 @@
   "workInProgress": [
     {
       "nome": "(DONE) Experimento  Cadastro B2B - Home RA - Modal",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/963832bd-05bb-4a29-ba6c-479b6b899118?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260823T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b4a8426b2a64fed9d501712a949eb6a3da1a5eeddc5c689cec1905d1c74832ca",
-      "atualizado": "2026-08-21T16:42:26Z",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/24bbb7dd-09ab-4626-8084-26862bf10e0c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260823%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260823T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ac24dda498576769051aa14ca769e6bad505ef523436ae1f0ced9ab80c23e81c",
+      "atualizado": "2026-08-24T19:00:21Z",
       "url": "https://www.figma.com/file/03H7FZsnQailZ1WH9B8vkv"
     },
     {
