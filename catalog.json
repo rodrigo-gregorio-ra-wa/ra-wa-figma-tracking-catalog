@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-08-31T02:45:49.922Z",
+  "geradoEm": "2026-08-31T12:20:16.564Z",
   "producao": [
     {
       "nome": "B2B - Cadastro Externo - Teste A/B - Cadastro Progressivo",
@@ -191,25 +191,25 @@
   "workInProgress": [
     {
       "nome": "(DONE) Experimento  Cadastro B2B - Home RA - Modal",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/f8beb34d-91cd-4202-a9b0-3c9f32566f4a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=89df302e8e14c2119f0648607562fbcd4e85ee21b339102463862b0e39053f07",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/f8beb34d-91cd-4202-a9b0-3c9f32566f4a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a24336edde43cf56b8249b4bff60fd0fc1f0eacd618ad0b930f84184435f0732",
       "atualizado": "2026-08-25T13:36:41Z",
       "url": "https://www.figma.com/file/03H7FZsnQailZ1WH9B8vkv"
     },
     {
       "nome": "Touchpoints Cadastro B2B - Home RA - Nova Seção",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/0810f5d4-628a-466b-b3fe-a6dbaba50fe7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=322d9bee3f5ab06554af8238a96f33573dd22a99c833cd1e48fad661f914af05",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/0810f5d4-628a-466b-b3fe-a6dbaba50fe7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0cc4cc02fbb9c0127305583572215f6832c72c1f5594017e844c3d3fff28a98b",
       "atualizado": "2026-08-06T14:45:19Z",
       "url": "https://www.figma.com/file/pYmLKhtqw7FZGvQSpRqzw0"
     },
     {
       "nome": "Touchpoints Cadastro B2B - Home RA - Tarja Topo",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/8f2404cf-6777-4417-801c-46449862246f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dee415399b7ad2c72f685cacdb134e30c57b97225aa0c134bf8a5b2e301002e1",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/8f2404cf-6777-4417-801c-46449862246f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c4db3a1829a69602b8c44b46d797d2cc6d626fb1f3dab6c576212637a4241e61",
       "atualizado": "2026-08-06T14:50:35Z",
       "url": "https://www.figma.com/file/g2Ocwag8YbbP3XyrQGsb7a"
     },
     {
       "nome": "[WIP]B2B | Checkout | Dentro Fluxo Auto-Cadastro",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/d9afe831-1aee-400a-85ef-5856d3e960f6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d853f3624d8f9fcd2ae410aa6bc503677270a2128c81e98ef932d403551e90e7",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/d9afe831-1aee-400a-85ef-5856d3e960f6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=41ff5bcca2feebbc6906f932acd875ac7163c3487ddf8c3914f2414a835cfb05",
       "atualizado": "2026-06-18T19:49:53Z",
       "url": "https://www.figma.com/file/uduLM0cv7uS4DCgTnsreEV"
     }
