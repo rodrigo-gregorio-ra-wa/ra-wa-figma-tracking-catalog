@@ -1,189 +1,189 @@
 {
-  "geradoEm": "2026-08-31T12:20:16.564Z",
+  "geradoEm": "2026-08-31T22:15:00.124Z",
   "producao": [
     {
       "nome": "B2B - Cadastro Externo - Teste A/B - Cadastro Progressivo",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e8f7a82-3481-4cfe-916f-d4fef13929db?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3380d3fa7f5e62d6a44782dd846ef7b7b8efe200703a2f7f891cffb0b5c2c6b4",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e8f7a82-3481-4cfe-916f-d4fef13929db?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e2efcaedfed577514e78002a1340e93590b0a16cc9467d508928d596899849ae",
       "atualizado": "2026-08-06T13:18:50Z",
       "url": "https://www.figma.com/file/dEkeWwYsNGUJ1F1qfyYd6r"
     },
     {
       "nome": "B2B - Fluxo Padrão - Cadastro Externo",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/98f3de61-09b9-4380-bf3b-38e83d2a845b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=747cdff1345cca4e4bfa5b6cb68b3afddd8e4f3891f862fb5a0905b8aa0d5238",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/98f3de61-09b9-4380-bf3b-38e83d2a845b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fc19f49f4c37fd206a5c3ae605b032ceb4839db3f01960845e54ba979e09dca9",
       "atualizado": "2026-08-24T18:51:52Z",
       "url": "https://www.figma.com/file/vH82wIl3fJ4hxZThXfaPHn"
     },
     {
       "nome": "WIP B2B - Fluxo Padrão - Cadastro no Checkout",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e6ac433-0455-40c2-8c57-8800a8f36b6d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe1cfab202f9e0da8ba624693945d2094aae1b89f256ef6626b1e38270cbe0ca",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2e6ac433-0455-40c2-8c57-8800a8f36b6d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4539ecb35a09a633de035049aac15ebb6bd259de23035d8db2bdaaff7f7f6a2",
       "atualizado": "2026-08-06T19:15:19Z",
       "url": "https://www.figma.com/file/CbpOh1DKDPxtXqEk3roBLP"
     },
     {
       "nome": "[DONE][CI]B2B - BPI - Checkout - Vindi (eventos sem data-attributes)",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/ccbf453e-d6f4-448d-9e79-bacb16d110f3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=02e5de88b164bcf8aefcd446a17d9f9869e1a0401431d9058a0e5610a16f976e",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/ccbf453e-d6f4-448d-9e79-bacb16d110f3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0d0aaf962159e4ad9831e49d3f001ecbf1fdd5d8cae1137701a549d12cb7118b",
       "atualizado": "2026-07-01T19:32:47Z",
       "url": "https://www.figma.com/file/fD0U4NljCp24tiuF5D0VqR"
     },
     {
       "nome": "[DONE][DA]B2B - Cadastro - Empresa By Company",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/1e783297-e1f0-44b0-a8fb-fd304c25ecc0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0f49fb5f51c34ed6c317de0f1d475bdd041e88f29e6a93243d52ba1de7aca764",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/1e783297-e1f0-44b0-a8fb-fd304c25ecc0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=443c3e13c9ada257bd1c2e99978f22263254be327d1b9a591565bfc11246da37",
       "atualizado": "2026-07-01T19:31:29Z",
       "url": "https://www.figma.com/file/T2iv9pV4V6SeRNqWRmDWZ2"
     },
     {
       "nome": "[DONE][DA]B2B - Checkout Vindi",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/0947aae6-542b-4fe3-a6c4-6057ac44d822?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d64a8d754650107638bdf92de4fab958282f3cf1b64de7c4f879024690476f4d",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/0947aae6-542b-4fe3-a6c4-6057ac44d822?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a9a1c04c1692dcdf53bffbd822ea65beb6480580c93981bf5f638d78db9dd618",
       "atualizado": "2026-07-01T19:37:11Z",
       "url": "https://www.figma.com/file/eXVBJ9QrljMRFhnqojo1jN"
     },
     {
       "nome": "[DONE][DA]B2B - Cobrança BP",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5b46e680-354c-47f4-b2b0-e90f6385e829?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=445100b6e2cdebd1cedd152a0a0d0a1882b24f13da3deaece75dff0a625c8ced",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5b46e680-354c-47f4-b2b0-e90f6385e829?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e3006be87157e05690ec1ba695f4d89c1f329dce306f1a85a3510ddcc23866b2",
       "atualizado": "2026-07-01T19:36:47Z",
       "url": "https://www.figma.com/file/eW7BLQ3x8JBsFblzzea2gA"
     },
     {
       "nome": "[DONE][DA]B2B - LPs",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/8613b0ab-13c5-4bdf-b80f-a383fd49ea3c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c59426a4a7f1b0d9c3b65474adb213b01147d873f6351a28a7cc3e4b96724519",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/8613b0ab-13c5-4bdf-b80f-a383fd49ea3c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9f98cf0337612305057b9b62bd1a313999ad5e5663a26ecd0da4220d6aa4709a",
       "atualizado": "2026-07-01T19:35:29Z",
       "url": "https://www.figma.com/file/MUScxqKXnwS8i798blwfE0"
     },
     {
       "nome": "[DONE][DA]B2B - Pré Checkout DMG",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2aeb0823-876e-4db0-86f8-38b3faeb0afd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e301a6764759d71914cfda2ca1f80f381ce9fe5f23e76b760f584f12538b5104",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/2aeb0823-876e-4db0-86f8-38b3faeb0afd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d35979b498423ca9a686a2bc9bae85da308736038f753e3ca5b0b5f9a9161872",
       "atualizado": "2026-07-01T19:36:02Z",
       "url": "https://www.figma.com/file/JQSVi83xn14TnbQqIsRvDb"
     },
     {
       "nome": "[DONE][DA]B2B - Recuperação de Acesso",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/99348ce2-3635-43b3-a3e5-8c8fa46242d3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=31fb1f857eca2ce2f8e416607fffa6921f1c92ab2948c95aeaf637c6a4c42026",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/99348ce2-3635-43b3-a3e5-8c8fa46242d3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d12874bd9dd8d751733c49f1a35f3faba8ff36650824aba5c88cffb1b021e635",
       "atualizado": "2026-07-01T19:35:53Z",
       "url": "https://www.figma.com/file/EYCl2PSmD6hoJHyG7MFFKt"
     },
     {
       "nome": "[DONE][DA]B2B - Área da Empresa - Banner Primeiro Acesso",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/c16d7c87-41bb-471a-8e15-76acdf019f14?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bb91b95deec64c1259f23c5e06ab68860f2bc7a2a5002a75d126d7bbdb7279cd",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/c16d7c87-41bb-471a-8e15-76acdf019f14?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1586bf5a0719094738fcddec5a0a8872b8a8868fa8d356969f7dd572a3e23ef6",
       "atualizado": "2026-07-01T19:32:19Z",
       "url": "https://www.figma.com/file/vmZ5ApPOJHEeOCuc7eKfvI"
     },
     {
       "nome": "[DONE][DA]B2B - Área da Empresa - Novo Menu",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/9f5b610b-2882-482c-a39f-03c7beacfb74?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=64d4080ba7e8f123f5a763a429e54233e517bb8a9b22c1dfc97387b7927a4b44",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/9f5b610b-2882-482c-a39f-03c7beacfb74?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4071c62bbaed8ea267f6fc2a586e21dd625d6cec1aacf2e9785746974e1d9a34",
       "atualizado": "2026-07-01T19:31:38Z",
       "url": "https://www.figma.com/file/FA7Gnf6sRvZdRRgVxW7ATt"
     },
     {
       "nome": "[DONE][DA]B2B | Onboarding | Personalização Descrição (com/sem IA) & Oferta BPI - Primeiro Acesso -",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/7c94de42-d389-4b80-bc4b-262458ef44fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d03622091e013c87f069081e658fe364fd4ffa43595dddae5c4736d08780266b",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/7c94de42-d389-4b80-bc4b-262458ef44fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e8b07266e66e245141738c0a00ce03dccb959bb69b161dd513a1114dbd772664",
       "atualizado": "2026-08-05T14:49:54Z",
       "url": "https://www.figma.com/file/yykIt7x20hxILBEKMmTIKy"
     },
     {
       "nome": "[DONE][DA]B2C - Nova Home",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/61ddcd26-2c3b-4ddf-90f8-1cbe027b8d27?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7c8a8de8295f68f7105c077b2053d20abd235b1b15cbfab1397aa4f1ace1b9b",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/61ddcd26-2c3b-4ddf-90f8-1cbe027b8d27?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d0eaec754fa233b7ce6591131c5afd1267f57bf3167b42d798a05ecb17b59e43",
       "atualizado": "2026-07-01T19:35:42Z",
       "url": "https://www.figma.com/file/SS304jn3mMO3L4ehQUyjWx"
     },
     {
       "nome": "[DONE][DA]B2C | Home Brand Page Pública",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/fe8367db-d697-4f10-a86f-24c9c974ce70?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5dea43a774e34d5db0bdb3e1c438534b10bd061f70df72cfd4e9436e9e7ce8e1",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/fe8367db-d697-4f10-a86f-24c9c974ce70?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0a51f8223de04a6dc41c4a5f2c0f266cf1463754f669af13871415e31f909d8f",
       "atualizado": "2026-07-01T19:36:21Z",
       "url": "https://www.figma.com/file/PkYAcCzGc4X6l4UKVdHVlU"
     },
     {
       "nome": "[DONE][DL]B2B - Cadastro de Empresa - WEB",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/3ade7e2e-6354-44da-b971-52c6b74e23d4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b34488c91555f0cfded99a4ec586ffcc487e554cbc38e8f41c1900870adbcbfd",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/3ade7e2e-6354-44da-b971-52c6b74e23d4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cb087e5bbfc49f05cd996213ae2b1889f760105470beeb481afe0b3520102aef",
       "atualizado": "2026-07-01T19:36:38Z",
       "url": "https://www.figma.com/file/hdHbleGwr7YMI0lET6Hd8U"
     },
     {
       "nome": "[DONE][DL]B2B - Onboarding - Personalização Descrição - Teste ABN",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/8799f40d-c162-4f58-9542-b491330eda45?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2d279738d5752ca3cd897510ece613940fcdf0176ac3e82fcc82b6c5431c23a2",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/8799f40d-c162-4f58-9542-b491330eda45?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=79ed7c602a967027def785918dc3146f0488746be83cfc8fbb847d5bec73823b",
       "atualizado": "2026-07-01T20:00:39Z",
       "url": "https://www.figma.com/file/NUVQSEtEJ9RtAWIupctWVs"
     },
     {
       "nome": "[DONE][DL]B2B - Área da Empresa - Aquisição Planos Avaliações por Whatsapp - WEB",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/da071b69-408f-49b1-81bb-3a664d878c61?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef0bbb8b2e68d4b707b355d4d8e49f7cdd0ebca804949ad5ebcad545cd7b6c10",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/da071b69-408f-49b1-81bb-3a664d878c61?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b094f594a98782744a1b88fae48757902b0a089f93f1d190de37f10fa48d030b",
       "atualizado": "2026-07-01T19:39:24Z",
       "url": "https://www.figma.com/file/wXp8k04SRwnDZ6f5bhlu5x"
     },
     {
       "nome": "[DONE][DL]B2B | Cadastro | Teste Desambiguação",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5566b32e-2a96-40b1-b98e-8bfa0bf52fa9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4133f2cb8fbaaae4d37787dc8b7f30540eb9854831cfccd338a8e8e4899e9a36",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5566b32e-2a96-40b1-b98e-8bfa0bf52fa9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9134062f3568806dcc85bce5eeb5380cb6d69b002cf93c560e58b06ad1939ec7",
       "atualizado": "2026-07-01T19:38:46Z",
       "url": "https://www.figma.com/file/9mRuqEsccElspHygOTWeZJ"
     },
     {
       "nome": "[DONE][DL]B2B | Checkout dentro Crie Acesso",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/98a45d1c-3ba1-4b7f-9453-6e44df4fefca?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b497c408bb3cbbeb430abbac88b81e1ad541a8bd6c7c4c59ed848f3e3b198a86",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/98a45d1c-3ba1-4b7f-9453-6e44df4fefca?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=23f969fc2ede6b4ba7fc7cc086affc5afc47a48c4439e92f9244251c970171e2",
       "atualizado": "2026-07-01T19:39:07Z",
       "url": "https://www.figma.com/file/1OmYcd8mmdVf45XLUmjEpM"
     },
     {
       "nome": "[DONE][DL]B2B | Checkout | Externo",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5ee400d2-aae4-49bf-a130-1520e986dbaa?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bac7af4bd318db21b1fa06e079e1561a94a32a379abbc077c7080d22ae6ed5b6",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5ee400d2-aae4-49bf-a130-1520e986dbaa?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=069ffd402119b5b87549f27dbb34f48ce476225e9d06b89bb1f012a0099caaa0",
       "atualizado": "2026-08-07T19:13:13Z",
       "url": "https://www.figma.com/file/xJLSH5jJtELJoQf8qZ5h04"
     },
     {
       "nome": "[DONE][DL]B2B | Checkout | Externo | Teste Checkout Contextual",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/6270400e-5b82-4b23-9135-1a806cb299b6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e35c7994666184555f2fa520b1353ff9bdfece6ae97c70d7de2028420e0e0d11",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/6270400e-5b82-4b23-9135-1a806cb299b6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8449a67b37128d48cf74f635d5eca7102b46fb5c3036ac0093fa6e497f12d227",
       "atualizado": "2026-08-19T18:18:00Z",
       "url": "https://www.figma.com/file/I8Ql3RzH0HWz6Zfouj0tJp"
     },
     {
       "nome": "[DONE][DL]B2B | Checkout | In App | Modal Área Logada",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/a1ed8b2a-b772-4e86-9d59-5e36839ae1e9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e40e1186b2a04d76d2e715a70b290e326421635fb2585877eb721f1f9ec007a",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/a1ed8b2a-b772-4e86-9d59-5e36839ae1e9?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f954e255c1c3afd43004a6b7884f576fa4b8d472d63bc8c825ebf0b93fdbf69a",
       "atualizado": "2026-08-05T14:33:41Z",
       "url": "https://www.figma.com/file/XoYIbQptdeYUliSpqPmVoc"
     },
     {
       "nome": "[DONE][DL]B2C - Gamificação - WEB e APP",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/05b74604-c261-40f3-b1e3-a512859cc953?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5f19a003cf59acb963a0168120508f780666d41fabc38a088a0e1c20d071dcb",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/05b74604-c261-40f3-b1e3-a512859cc953?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6861155cae14d552faa80af81cb7a7010ab9a6a58107f34787887a99dec7bfe9",
       "atualizado": "2026-07-01T19:38:55Z",
       "url": "https://www.figma.com/file/P7PoHvT2oJZPOo4UQmDErT"
     },
     {
       "nome": "[DONE][DL]B2C - Notificação - WEB e APP",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/d867520d-a5c0-462c-8d5d-5f6a130bb52e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bd7fad2c6fab67ff0dc536d3ccc9e0e151a9818f960d552c98cdc587bb64d070",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/d867520d-a5c0-462c-8d5d-5f6a130bb52e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=67fa3146f98d4723ab2c9aa5d89497aa1729c43f6ef1b171041b227eb1c81189",
       "atualizado": "2026-07-01T19:38:50Z",
       "url": "https://www.figma.com/file/I4XYpRDm9DtKV2dzq9lpZz"
     },
     {
       "nome": "[DONE][DL]B2C - Reclamações - Fluxo de Avaliações - WEB & APP",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5949036d-f9c3-4336-8ca1-02546224d294?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=504577991215cbf710a03d72123826b076a2c537988193854925e8b042c5cba3",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/5949036d-f9c3-4336-8ca1-02546224d294?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=04c8b7246a5cad6f4094a72e2e4bd721b60b4cbf617105099bb12b77936cf97a",
       "atualizado": "2026-07-01T19:39:20Z",
       "url": "https://www.figma.com/file/xYzCxcX1pmtN7sMw7HYQZ2"
     },
     {
       "nome": "[DONE][DL]B2C | Reclamação | Rascunho de Notificação",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/9e501599-d1fb-4b88-8165-eb76a100edeb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=381bade50a478f2d9110c88725453984b164e6c003e6221dfd1ead462a69cbd3",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/9e501599-d1fb-4b88-8165-eb76a100edeb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eeb6b3ff62603c0e5c9e1a6022ee2a529ebc07ae107e1302accf5a99be691788",
       "atualizado": "2026-07-01T19:39:01Z",
       "url": "https://www.figma.com/file/Rg25TjCk2y4pEVZXwfqYP2"
     },
     {
       "nome": "[DONE][UTM]B2B - Fluxos Campanha 14 dias Grátis",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/3639dee4-2999-46b7-84a8-db5354b52aaa?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e2bd3da2bd3af6bef757a0890f902f0cc9128f9da0184e00b65cfbf812f17e9a",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/3639dee4-2999-46b7-84a8-db5354b52aaa?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b960cfbaa3c94312d874125943c16eb978a933a4d14713105e25884e7fc280d2",
       "atualizado": "2026-07-01T19:35:03Z",
       "url": "https://www.figma.com/file/ojB9wCH42BzGoD8fSJrMXU"
     },
     {
       "nome": "[Legado] Mapa de interação de eventos",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/a02c1988-f17b-4094-b61d-79fd97280169?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=25cfde7ba8f1edb01313a0317a294aff83066b4951e918d0036240f7ab9f19e0",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/a02c1988-f17b-4094-b61d-79fd97280169?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=94d1fd5fe25d2e1f91e1529a76f82977b447c72db1751aa43c0ba37135b26435",
       "atualizado": "2026-01-14T17:11:52Z",
       "url": "https://www.figma.com/file/NR86cNn4hTd0gzDtRUq3ka"
     },
     {
       "nome": "[TBV] B2B - Área da Empresa - BPI",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/a2ad428a-a248-4194-8c82-f712cfa9e6a0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=679dd050be837507762ee75e273228244ef3122bef95307c2964659e899ad80f",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/a2ad428a-a248-4194-8c82-f712cfa9e6a0?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b1289f721dc8716db712abf70f5825e5f8250dc251cad746ae4961e76cafe52d",
       "atualizado": "2026-01-14T17:39:04Z",
       "url": "https://www.figma.com/file/A3ULTeoaHNYCIoSFhipHTZ"
     },
     {
       "nome": "[TBV] B2C - Segmentos - Casa de Apostas",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/c0557cdf-b44b-46d3-b015-5b654e4a9fbb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3BAOQIQT%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2df277b7b9fa8f69b466c3fa540af7f58b1682d5599e9b904cebda015e0a8575",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/c0557cdf-b44b-46d3-b015-5b654e4a9fbb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3ef897792afb74d97631a8631b17751a41a9c24a7589d598817ce5a02604636b",
       "atualizado": "2026-01-14T17:32:10Z",
       "url": "https://www.figma.com/file/ge1InohATdvhZU5P2x91hn"
     }
