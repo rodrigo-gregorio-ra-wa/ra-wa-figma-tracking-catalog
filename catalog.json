@@ -1,5 +1,5 @@
 {
-  "geradoEm": "2026-09-02T10:19:54.107Z",
+  "geradoEm": "2026-09-02T15:44:47.854Z",
   "producao": [
     {
       "nome": "B2B - Cadastro Externo - Teste A/B - Cadastro Progressivo",
@@ -9,8 +9,8 @@
     },
     {
       "nome": "B2B - Fluxo Padrão - Cadastro Externo",
-      "thumbnail": "https://s3-alpha.figma.com/thumbnails/98f3de61-09b9-4380-bf3b-38e83d2a845b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fc19f49f4c37fd206a5c3ae605b032ceb4839db3f01960845e54ba979e09dca9",
-      "atualizado": "2026-08-24T18:51:52Z",
+      "thumbnail": "https://s3-alpha.figma.com/thumbnails/f89e93e9-2ad3-4fda-a87a-4bad127b51e7?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCVT66BXVV%2F20260830%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260830T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f652b0abbfbe9ab543c57e1bb44f68760631a1d9c1f3b963b71d521c472a4763",
+      "atualizado": "2026-09-02T14:53:56Z",
       "url": "https://www.figma.com/file/vH82wIl3fJ4hxZThXfaPHn"
     },
     {
